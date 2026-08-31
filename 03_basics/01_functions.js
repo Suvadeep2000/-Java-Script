@@ -40,3 +40,38 @@ function loginUserMessage(username){
 }
 
 console.log(loginUserMessage("Suvadeep"));
+
+
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200, 300, 400, 1000));
+
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(200, 300, 400, 1000));
+
+
+const user = {
+    username1 : "Suvadeep",
+    price : 199
+}
+
+function handelObject(anyobject){
+    console.log(`Username is ${anyobject.username1} and price is ${anyobject.price}`);
+    
+}
+
+handelObject(user)
+
+const myNewArray = [300,500, 600, 700]
+
+function returnSecondArray(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondArray(myNewArray))
